@@ -4,10 +4,10 @@
     font-family: 'Noto Sans', sans-serif;
     font-size: 1.6em;
     font-weight: 600;
-    --principal-color: #0040efdc;
-    --secondary-color: #04007a;
     margin: 0;
     padding: 0;
+    --principal-color: #0040efdc;
+    --secondary-color: #04007a;
 }
 
 
@@ -27,19 +27,62 @@
 
 a{
     text-decoration: none;
-    color: var(--principal-color)
+    color: var(--principal-color);
+    border: 2px solid var(--principal-color);
+    border-radius: 3em;
+    padding: 10px;
 }
 a:hover{
-    color: var(--secondary-color)
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+
 }
+
+main{
+    margin: 4em;
+}
+
 .my-info{
     display: flex;
     justify-content: right;
-    margin: 7em 3em 4em 4em;
-    color:var(--principal-color);
+    margin-top: 10em;
+    margin-bottom: 4em;
+    color: var(--principal-color);
+    padding: 1em;
 }
 
 span{
     font-weight: 400;
-    color:var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.img{
+    margin-top: -3.5em;
+    margin-right: 6em;
+
+}
+
+.works-title{
+    font-size: 1.3em;
+    color: var(--principal-color);
+    text-align: right;
+    border-bottom: 3px solid var(--secondary-color);
+
+}
+
+.about-me .works{
+    margin: 3em;
+    display:block;
+    flex-direction: row;
+}
+
+.abt-me{
+    font-size: 1.3em;
+    color: var(--principal-color);
+    text-align: left;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.abt-p{
+    font-size: 0.7em;
 }
