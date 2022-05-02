@@ -5,13 +5,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="nav-cont"> <!--Header Start-->
+    <header class="nav-cont" id="top-pag"> <!--Header Start-->
         <nav class="nav">
             <ul class="list-dsp">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#top-pag">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#worksfocus">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         </header> <!--Header End-->
@@ -21,12 +21,32 @@
             <h1 class="my-desc">Brian Di Marco <br><span>Junior Fronted Developer</span></h1>
         </div> <!--IMG + Presetation Section End-->
         <div class="about-me"> <!--About me Section Start-->
-            <h2 class="abt-me">About Me</h2>
-            <p class="abt-p">Hi!, My name is Brian Di Marco, im a Junior developer!</p> 
+            <h2 class="abt-me" id="about">About Me</h2>
+            <p class="abt-p">Hi, im a 24 y/o Junior Fronted Developer from Argentina, im still learning HTML, CSS, JS and GIT.<br> this is only a expample of my future portfolio.</p> 
         </div> <!--About me Section End-->
-        <div class="works"> <!--Works Section Start-->
+        <div class="works" id="worksfocus"> <!--Works Section Start-->
             <h3 class="works-title">Works</h3>
         </div> <!--Works Section End-->
+        <div class="contact-me">
+            <h4 class="contact-title" id="contact">Contact Me</h4>
+            <form action="" class="form">
+                <label for="name">
+                    <p class="p-label">Name</p>
+                    <input type="text" name="name" id="name" placeholder="Your name here..." required>
+                </label>
+                <label for="email">
+                    <p class="p-label">Email</p>
+                    <input type="email" name="email" id="email" placeholder="Your email here..." required>
+                </label>
+                <label for="textarea">
+                    <p class="p-label">Write Here</p>
+                    <textarea name="textarea" id="textarea"></textarea>
+                </label>
+                <label for="submit" class="submit-button">
+                    <button id="submit" class="btn-style">Submit</button>
+                </label>
+            </form>
+        </div>
     </main> <!--Main Section End-->
 </body>
 </html>

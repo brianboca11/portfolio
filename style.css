@@ -19,6 +19,7 @@
     list-style-type: none;
     display: flex;
     justify-content: center;
+    padding-top: 1em;
 }
 
 .list-dsp li{
@@ -45,7 +46,7 @@ main{
 .my-info{
     display: flex;
     justify-content: right;
-    margin-top: 10em;
+    margin-top: 12em;
     margin-bottom: 4em;
     color: var(--principal-color);
     padding: 1em;
@@ -59,7 +60,6 @@ span{
 .img{
     margin-top: -3.5em;
     margin-right: 6em;
-
 }
 
 .works-title{
@@ -70,7 +70,7 @@ span{
 
 }
 
-.about-me .works{
+.about-me .works .contact-me{
     margin: 3em;
     display:block;
     flex-direction: row;
@@ -85,4 +85,63 @@ span{
 
 .abt-p{
     font-size: 0.7em;
+    text-align: center;
 }
+
+.contact-title{
+    font-size: 1.3em;
+    color: var(--principal-color);
+    text-align: left;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.form, button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--principal-color);
+}
+
+.p-label{
+    text-align: center;
+}
+
+#name, #email{
+    font-size: 0.6em;
+    text-align: center;
+    border: 2px solid var(--secondary-color);
+    border-radius: 20px;
+    padding: 20px 20px;
+    width: 300px;
+
+}
+
+textarea{
+    font-size: 0.7em;
+    padding: 20px 20px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 20px;
+    width: 75vh;
+    height: 20vh;
+    resize: none;
+}
+
+.btn-style{
+    border: 2px solid var(--secondary-color);
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 30px 100px;
+    cursor: pointer;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.btn-style:active{
+    border: 2px solid var(--principal-color);
+}
+
+input:focus{
+    border: 2px solid var(--principal-color);
+}
+
