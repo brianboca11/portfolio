@@ -23,7 +23,7 @@
 }
 
 .list-dsp li{
-    margin: 0 100px;
+    margin: 0 70px;
 }
 
 a{
@@ -45,11 +45,11 @@ main{
 
 .my-info{
     display: flex;
-    justify-content: right;
-    margin-top: 12em;
+    justify-content: center;
+    margin-top: 8em;
     margin-bottom: 4em;
     color: var(--principal-color);
-    padding: 1em;
+    padding: 10px;
 }
 
 span{
@@ -58,8 +58,10 @@ span{
 }
 
 .img{
-    margin-top: -3.5em;
+    margin-top: -1.5em;
     margin-right: 6em;
+    width: 300px;
+    height: 300px;
 }
 
 .works-title{
@@ -70,7 +72,7 @@ span{
 
 }
 
-.about-me .works .contact-me{
+.about-me .works .contact-me .skills-cont{
     margin: 3em;
     display:block;
     flex-direction: row;
@@ -91,8 +93,16 @@ span{
 .contact-title{
     font-size: 1.3em;
     color: var(--principal-color);
+    text-align: right;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.skills-title{
+    font-size: 1.3em;
+    color: var(--principal-color);
     text-align: left;
     border-bottom: 3px solid var(--secondary-color);
+
 }
 
 .form, button{
@@ -108,19 +118,21 @@ span{
 }
 
 #name, #email{
-    font-size: 0.6em;
+    border: none;
+    font-size: 0.7em;
     text-align: center;
-    border: 2px solid var(--secondary-color);
-    border-radius: 20px;
+    border-bottom: 3px solid var(--secondary-color);
     padding: 20px 20px;
     width: 300px;
+    outline: none;
 
 }
 
 textarea{
+    outline: none;
     font-size: 0.7em;
     padding: 20px 20px;
-    border: 2px solid var(--secondary-color);
+    border: 3px solid var(--secondary-color);
     border-radius: 20px;
     width: 75vh;
     height: 20vh;
@@ -128,20 +140,24 @@ textarea{
 }
 
 .btn-style{
-    border: 2px solid var(--secondary-color);
+    outline: none;
+    border: 3px solid var(--secondary-color);
     border-radius: 20px;
     margin-top: 30px;
-    padding: 30px 100px;
+    padding: 30px 70px;
     cursor: pointer;
     font-size: 0.7em;
     font-weight: 600;
 }
 
 .btn-style:active{
-    border: 2px solid var(--principal-color);
+    border: 3px solid var(--principal-color);
 }
 
-input:focus{
-    border: 2px solid var(--principal-color);
+#name:focus, #email:focus{
+    border-bottom: 3px solid var(--principal-color);
 }
 
+textarea:focus{
+    border: 3px solid var(--principal-color);
+}
