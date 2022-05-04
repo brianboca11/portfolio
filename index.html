@@ -8,11 +8,11 @@
     <header class="nav-cont" id="top-pag"> <!--Header Start-->
         <nav class="nav">
             <ul class="list-dsp">
-                <li><a href="#top-pag">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#worksfocus">Works</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="li-nav"><a href="#top-pag" class="nav-buttons">Home</a></li>
+                <li class="li-nav"><a href="#about" class="nav-buttons">About Me</a></li>
+                <li class="li-nav"><a href="#worksfocus" class="nav-buttons">Works</a></li>
+                <li class="li-nav"><a href="#skills" class="nav-buttons">Skills</a></li>
+                <li class="li-nav"><a href="#contact" class="nav-buttons">Contact</a></li>
             </ul>
         </nav>
         </header> <!--Header End-->
@@ -23,7 +23,10 @@
         </div> <!--IMG + Presetation Section End-->
         <div class="about-me"> <!--About me Section Start-->
             <h2 class="abt-me" id="about">About Me</h2>
-            <p class="abt-p">Hi, im a 24 y/o Junior Fronted Developer from Argentina, im still learning HTML, CSS, JS and GIT.<br> this is only a expample of my future portfolio.</p> 
+            <div class="p-cont">
+                <p class="abt-p">Hi, im a 24 y/o Junior Fronted Developer from Argentina, im still learning HTML, CSS, JS and GIT. this is only a expample of my future portfolio.</p> 
+                <p class="abt-p">You can download my cv here. <a href=""><img width="200px" src="wordpress-pdf-icon.png" alt=""></a></p>
+            </div>
         </div> <!--About me Section End-->
         <div class="works" id="worksfocus"> <!--Works Section Start-->
             <h3 class="works-title">Works</h3>
@@ -33,7 +36,7 @@
         </div> <!--Skills Section End-->
         <div class="contact-me"> <!--Contact me + Form Section Start-->
             <h4 class="contact-title" id="contact">Contact Me</h4>
-            <form method="GET" action="mailto:briankpo11games@live.com" class="form">
+            <form method="POST" action="mail.php" class="form">
                 <label for="name">
                     <p class="p-label">Name</p>
                     <input type="text" name="name" id="name" placeholder="Your name here..." required>
@@ -43,7 +46,7 @@
                     <input type="email" name="email" id="email" placeholder="Your email here..." required>
                 </label>
                 <label for="textarea">
-                    <p class="p-label">Write Here</p>
+                    <p class="p-label">Message</p>
                     <textarea name="textarea" id="textarea"></textarea>
                 </label>
                 <label for="submit" class="submit-button">
