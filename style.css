@@ -62,6 +62,8 @@ span{
     margin-right: 6em;
     width: 300px;
     height: 300px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 50%;
 }
 
 .works-title{
@@ -169,4 +171,26 @@ textarea{
 
 textarea:focus{
     border: 3px solid var(--principal-color);
+}
+
+.img-size{
+    width: 100px;
+}
+
+.skills-img{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+}
+
+#p-html, #p-css, #p-js{
+    color: var(--principal-color);
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+:where(.img-size:hover){
+    transform: scale(1.2);
+    transition: all 0.2s;
 }
